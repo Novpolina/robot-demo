@@ -1,0 +1,112 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Global Options:
+    Background Color: 22; 28; 38
+    Fixed Frame: map
+    Frame Rate: 20
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+      Cell Size: 1
+      Plane Cell Count: 20
+      Color: 80; 90; 100
+    - Class: rviz_default_plugins/Map
+      Name: Sensor map
+      Enabled: true
+      Alpha: 0.8
+      Topic:
+        Value: /map
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+        Depth: 1
+      Color Scheme: map
+    - Class: rviz_default_plugins/RobotModel
+      Name: Robot
+      Enabled: true
+      Description Source: Topic
+      Description Topic:
+        Value: /robot_description
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+        Depth: 1
+    - Class: rviz_default_plugins/LaserScan
+      Name: Lidar
+      Enabled: true
+      Topic:
+        Value: /lidar/scan
+        Reliability Policy: Best Effort
+      Size (m): 0.035
+      Style: Points
+      Color: 255; 80; 100
+      Color Transformer: FlatColor
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Depth obstacles
+      Enabled: true
+      Topic:
+        Value: /depth/obstacles
+        Reliability Policy: Best Effort
+      Style: Points
+      Size (m): 0.05
+      Color Transformer: FlatColor
+      Color: 255; 170; 40
+    - Class: rviz_default_plugins/Path
+      Name: A star plan
+      Enabled: true
+      Topic:
+        Value: /plan
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+      Color: 80; 255; 160
+      Line Style: Lines
+      Line Width: 0.04
+    - Class: rviz_default_plugins/Path
+      Name: Actual trajectory
+      Enabled: true
+      Topic:
+        Value: /trajectory
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+      Color: 80; 170; 255
+      Line Style: Lines
+      Line Width: 0.04
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Start and finish
+      Enabled: true
+      Topic:
+        Value: /mission/markers
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+    - Class: rviz_default_plugins/Image
+      Name: Astra depth
+      Enabled: true
+      Topic:
+        Value: /depth/image
+        Reliability Policy: Best Effort
+      Normalize Range: true
+      Min Value: 0
+      Max Value: 8
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 15
+      Focal Point: {X: 4, Y: 0, Z: 0}
+      Pitch: 1.05
+      Yaw: 4.71
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+Window Geometry:
+  Width: 800
+  Height: 850
+  X: 0
+  Y: 0
+  Displays:
+    collapsed: false
+  Views:
+    collapsed: true

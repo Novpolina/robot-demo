@@ -1,0 +1,10 @@
+ffmpeg	7:4.4.2-0ubuntu0.22.04.1
+libignition-gazebo6:amd64	6.18.0-1~jammy
+python3	3.10.6-1~22.04.1
+python3-numpy	1:1.21.5-1ubuntu22.04.1
+ros-humble-robot-state-publisher	3.0.3-2jammy.20260907.225951
+ros-humble-ros-base	0.10.0-1jammy.20260908.101203
+ros-humble-ros-gz	0.244.26-1jammy.20260908.015605
+ros-humble-ros-gz-bridge	0.244.26-1jammy.20260907.225444
+ros-humble-rviz2	11.2.29-1jammy.20260908.014614
+ros-humble-xacro	2.1.1-1jammy.20260304.195513

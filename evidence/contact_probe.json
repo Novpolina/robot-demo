@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "obstacle_contact_events": 1,
+  "sample": [
+    "ros_gz_interfaces.msg.Contact(collision1=ros_gz_interfaces.msg.Entity(id=39, name='demo_robot::base_link::base_link_fixed_joint_lump__body_collision_collision', type=0), collision2=ros_gz_interfaces.msg.Entity(id=11, name='wall_one::link::collision', type=0), positions=[geometry_msgs.msg.Vector3(x=3.21, y=0.16, z=-2.7755575615628914e-17), geometry_msgs.msg.Vector3(x=3.21, y=-0.16, z=-2.7755575615628914e-17), geometry_msgs.msg.Vector3(x=2.79, y=-0.16, z=-2.7755575615628914e-17), geometry_msgs.msg.Vector3(x=2.79, y=0.16, z=-2.7755575615628914e-17)], normals=[], depths=[], wrenches=[])"
+  ]
+}

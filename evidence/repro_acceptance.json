@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "reason": "mission_completed",
+  "checks": {
+    "mission_succeeded": true,
+    "starts_in_A": true,
+    "finishes_in_B_ground_truth": true,
+    "finishes_in_B_GPS": true,
+    "no_obstacle_contacts": true,
+    "positive_ground_truth_clearance": true,
+    "detour_not_straight_line": true,
+    "lidar_has_real_measurements": true,
+    "depth_has_real_measurements": true,
+    "GPS_messages_received": true,
+    "depth_only_obstacle_added_to_map": true,
+    "depth_only_obstacle_measured_by_camera": true,
+    "map_and_plan_published": true,
+    "TF_chain_complete": true,
+    "zero_velocity_after_arrival": true,
+    "robot_actually_stopped": true,
+    "ground_truth_received": true,
+    "chassis_stays_level": true
+  },
+  "metrics": {
+    "ground_truth_final_error_m": 0.19850443169941306,
+    "gps_final_error_m": 0.21603485690963828,
+    "minimum_conservative_clearance_m": 0.31920167404761207,
+    "travelled_m": 9.230511963385299,
+    "start_error_m": 1.1611543358189987e-21,
+    "maximum_chassis_tilt_deg": 0.005456203795832877,
+    "obstacle_contact_events": 0,
+    "contact_messages": 0,
+    "message_counts": {
+      "truth": 2127,
+      "gps": 363,
+      "depth": 362,
+      "lidar": 362,
+      "pose": 1062,
+      "map": 72,
+      "plan": 19
+    },
+    "wall_duration_s": 42.767587708000065,
+    "sensor_rates_hz": {
+      "gps": 10.001105094485577,
+      "depth": 10.001108156028367,
+      "lidar": 10.001108156028367,
+      "pose": 29.411764705882348,
+      "map": 2.0,
+      "plan": 0.5538461538461539
+    }
+  }
+}

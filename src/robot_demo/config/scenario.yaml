@@ -1,0 +1,14 @@
+datum: {latitude: 55.0, longitude: 37.0, altitude: 0.0}
+map: {origin_x: -2.0, origin_y: -4.0, width: 120, height: 80, resolution: 0.1}
+robot: {radius: 0.29, clearance: 0.22, max_speed: 0.30, lookahead: 0.35, goal_tolerance: 0.20}
+start: [0.0, 0.0]
+finish: [8.0, 0.0]
+obstacles:
+  - {name: wall_one, x: 3.0, y: 0.0, sx: 0.8, sy: 2.2, sz: 1.1}
+  - {name: wall_two, x: 5.2, y: -1.7, sx: 0.8, sy: 1.0, sz: 0.8}
+  - {name: box_three, x: 6.0, y: 1.6, sx: 1.0, sy: 0.8, sz: 0.65}
+  - {name: depth_only_box, x: 1.4, y: 0.0, sx: 0.6, sy: 0.6, sz: 0.16, sensor_only: true}
+# GPS is the primary waypoint format. At datum latitude, 8 m East is approximately 0.000125 degrees longitude.
+waypoints:
+  - {latitude: 55.0, longitude: 37.0000937604}
+  - {latitude: 55.0, longitude: 37.0001250139}
