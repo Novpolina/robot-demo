@@ -15,7 +15,7 @@ fi
 if [[ $(dpkg --print-architecture) != amd64 ]]; then
   echo 'This project installer is validated for Ubuntu 22.04 amd64.' >&2; exit 1
 fi
-ros_apt_url="${ROS_APT_BASE_URL:-https://packages.ros.org/ros2/ubuntu}"
+ros_apt_url="${ROS_APT_BASE_URL:-https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu}"
 if [[ ! "$ros_apt_url" =~ ^https://[a-zA-Z0-9./_-]+$ ]]; then
   echo 'ROS_APT_BASE_URL must be an HTTPS URL without credentials or query parameters.' >&2; exit 2
 fi
